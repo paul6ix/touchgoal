@@ -22,7 +22,7 @@ app.post('/tasks', function (req, res) {
     res.json(req.body)
 });
 //create port to listen on localhost
-app.listen(5000, function () {
+app.listen(process.env.PORT || 5000, function () {
     console.log("Listening on port 5000")
 
 });
