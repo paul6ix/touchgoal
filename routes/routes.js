@@ -30,6 +30,11 @@ router.post('/tasks', function (req, res) {
     });
 
 
+
+});
+router.get('/api',async (req, res, next)=>{
+    let task = await Tasks.find();
+    res.json(task);
 });
 router.post('/tasks/:id/completed', function (req,res) {
     let taskId = req.params.id;
