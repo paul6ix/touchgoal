@@ -1,6 +1,7 @@
 angular.module('myApp', [])
     .controller('indexController', indexController)
-    .controller('boardController', boardController);
+    .controller('boardController', boardController)
+    .filter('capitalize', capitalize);
 
 
 function indexController() {
@@ -19,4 +20,11 @@ function boardController($http) {
         console.log(err)
 
     })
+}
+
+function capitalize() {
+    return function (input) {
+        return (!!input) ? input.charAt(0).toUpperCase() + input.substr(1).toLowerCase() : '';
+    }
+
 }

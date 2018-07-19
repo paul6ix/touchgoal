@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/view.css">
+
+
 </head>
+
 <body>
 <header>
     <div class="nav">
@@ -16,24 +21,9 @@
         </ul>
     </div>
 </header>
-<div ng-controller="boardController as bc">
-
-    <ul>
-
-        <li ng-repeat="goal in bc.goals">
-            <h2>{{goal.name}}</h2> <br>
-            <h4>{{goal.task}}</h4><br>
-            <p>{{goal.date}}</p><br>
 
 
-        </li>
-    </ul>
-</div>
+<script src="js/index3.js"></script>
 
-<script src="scripts/angular.js"></script>
-<script src="scripts/angular-route.js"></script>
-<!--<script src="app.js"></script>-->
-<script src="controllers.js"></script>
-<script src="js/index.js"></script>
 </body>
 </html>
