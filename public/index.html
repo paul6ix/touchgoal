@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -19,9 +19,9 @@
 <header>
     <div class="nav">
         <ul>
-            <li class="home"><a  href="board.mustache">Board</a></li>
-            <li class="tutorials"><a class="active" href="#">Goals</a></li>
-            <li class="about"><a href="#">Report</a></li>
+            <li class="home"><a href="board.html">Board</a></li>
+            <li class="tutorials"><a class="active" href="index.html">Goals</a></li>
+            <li class="about"><a href="report.html">Report</a></li>
         </ul>
     </div>
 </header>
@@ -33,6 +33,9 @@
      </header>-->
 
     <form class="form" action="/tasks" method="post">
+        <div class="form__group">
+            <input name="name" type="text" placeholder="Enter full name" class="form__input"/>
+        </div>
         <div class="form__group">
             <input name="task" type="text" placeholder="Enter Activities" class="form__input"/>
         </div>
@@ -46,42 +49,15 @@
         </div>-->
 
         <button class="btn" type="submit">Add</button>
-    </form >
-    <div class="div_input">
-    <ul>
-        <h3>
-            Added Tasks:
-        </h3>
-        {{#task}}
-            <hr>
-            <li>
-                <form action="/tasks/{{_id}}/completed" method="post">
-                    {{task}}
-                    <button  class="site" type="submit">✔</button>
-                </form>
-            </li>
-        {{/task}}
+    </form>
 
-    </ul>
-        <ul>
-    <h2 >
-        Completed Tasks:
-    </h2>
-    {{#taskDone}}
-        <hr>
-        <li>
-            <form action="/tasks/{{_id}}/completed" method="post">
-                {{task}}
-                <button class="site" type="submit">X</button>
-            </form>
-        </li>
-    {{/taskDone}}
-        </ul>
-    </div>
 
 </div>
 
-
+<script src="scripts/angular.js"></script>
+<script src="scripts/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="controllers.js"></script>
 <script src="js/index.js"></script>
 
 

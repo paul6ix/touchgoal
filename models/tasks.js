@@ -1,14 +1,18 @@
 const mongoose = require('mongoose');
 const schema = mongoose.Schema;
 let tasksSchema = new schema({
+    name: {
+        type: String,
+        required: true
+    },
     task: {
         type: String,
         required : true
 
     },
-    done: {
-        type: Boolean,
-        default: false
+    date: {
+        type: String,
+        default: Date.now(),
     }
 
 });

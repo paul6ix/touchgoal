@@ -18,7 +18,10 @@ router.get('/', function (req, res) {
 
 });
 router.post('/tasks', function (req, res) {
-    let newTask = new Tasks({task: req.body.task});
+    let newTask = new Tasks({
+        name: req.body.name,
+        task: req.body.task
+    });
     newTask.save().then(function (result) {
         console.log(result);
         res.redirect('/');

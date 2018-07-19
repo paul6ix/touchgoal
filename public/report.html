@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Report</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/view.css">
+</head>
+<body>
+<header>
+    <div class="nav">
+        <ul>
+            <li class="home"><a href="board.html">Board</a></li>
+            <li class="tutorials"><a href="index.html">Goals</a></li>
+            <li class="about"><a class="active" href="report.html">Report</a></li>
+        </ul>
+    </div>
+</header>
+<div ng-controller="boardController as bc">
+
+    <ul>
+
+        <li ng-repeat="goal in bc.goals">
+            <h2>{{goal.name}}</h2> <br>
+            <h4>{{goal.task}}</h4><br>
+            <p>{{goal.date}}</p><br>
+
+
+        </li>
+    </ul>
+</div>
+
+<script src="scripts/angular.js"></script>
+<script src="scripts/angular-route.js"></script>
+<!--<script src="app.js"></script>-->
+<script src="controllers.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

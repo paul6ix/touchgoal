@@ -1,0 +1,39 @@
+<html ng-app="myApp">
+<head>
+    <meta name="viewport"
+          content="initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; width=device-width"/>
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/view.css">
+</head>
+<body>
+<header>
+    <div class="nav">
+        <ul>
+            <li class="home"><a class="active" href="board.html">Board</a></li>
+            <li class="tutorials"><a href="index.html">Goals</a></li>
+            <li class="about"><a href="report.html">Report</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="content float-left" ng-controller="boardController as bc">
+    <div class="card" ng-repeat="goal in bc.goals">
+        <h1>{{goal.name}}</h1>
+        <i class="divide"></i>
+        <h4>{{goal.task}}</h4>
+        <p>{{goal.date | date:'MM/dd/yyyy @ h:mma'}}</p>
+
+    </div>
+
+
+</div>
+
+<script src="scripts/angular.js"></script>
+<script src="scripts/angular-route.js"></script>
+<!--<script src="app.js"></script>-->
+<script src="controllers.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

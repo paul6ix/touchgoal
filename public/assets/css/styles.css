@@ -24,26 +24,14 @@ body {
     position:fixed;
     top:62px;
     bottom:0px;
-    left:0px;
+    left: 10px;
     right:0px;
-    overflow:scroll;
+    overflow: auto;
     -webkit-overflow-scrolling:touch;
     margin-bottom:30px;
 }
 
-.footer {
-    position:fixed;
-    height:22px;
-    left:0px;
-    right:0px;
-    bottom:0px;
-    background:#FFF;
-    color:888;
-    text-align:center;
-    padding:5px 0px 0px 0px;
-    border-top:5px solid #CCC;
-    font-size:12px;
-}
+
 
 .float-left .card {
     float:left;
@@ -65,7 +53,11 @@ body {
     overflow:hidden;
 }
 
-.card h1 {
+.divide {
+    border: 3px #333333;
+}
+
+.card h1, h4 {
     margin:0px;
     padding:10px;
     padding-bottom:0px;
@@ -126,29 +118,10 @@ body {
     vertical-align:top;
 }
 
-.image1 {
-    background-image:url('http://farm6.staticflickr.com/5323/9902848784_cbd10ba3ca_c.jpg');
-}
 
-.image2 {
-    background-image:url('http://farm6.staticflickr.com/5448/9901034384_e3de7406c3_c.jpg');
-}
 
-.image3 {
-    background-image:url('http://farm8.staticflickr.com/7383/9899900453_4540cf9de6_c.jpg');
-}
 
-.image4 {
-    background-image:url('http://farm3.staticflickr.com/2811/9680904065_7f866f4ab5_c.jpg');
-}
 
-.image5 {
-    background-image:url('http://farm6.staticflickr.com/5496/9684141030_70a80e3b40_z.jpg');
-}
-
-.image6 {
-    background-image:url('http://farm4.staticflickr.com/3726/9522001276_21bb6fbd64_z.jpg');
-}
 
 
 
