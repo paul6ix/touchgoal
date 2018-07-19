@@ -12,7 +12,7 @@ let tasksSchema = new schema({
     },
     date: {
         type: String,
-        default: Date.now(),
+        default: Date.now,
     }
 
 });

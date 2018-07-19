@@ -46,15 +46,10 @@ body {
 
 .card {
     background:#FFF;
-    border:1px solid #AAA;
-    border-bottom:3px solid #BBB;
+
     padding:0px;
     margin:15px;
     overflow:hidden;
-}
-
-.divide {
-    border: 3px #333333;
 }
 
 .card h1, h4 {
