@@ -86,10 +86,11 @@ body {
     transition: 0.3s;
 }
 
-hr{
-    margin: 3px 3px ;
+hr {
+    margin: 3px 3px;
 }
-ul  li{
+
+ul li {
     list-style-type: none;
     margin-bottom: 10px;
 }
@@ -111,7 +112,6 @@ ul  li{
     text-indent: 0;
 
 }
-
 
 .btn:hover {
     background: #a09486;

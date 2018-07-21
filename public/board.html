@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/view.css">
     <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css'>
 </head>
-<body>
+<body class="ng-cloak">
 <header>
     <div class="nav">
         <ul>
@@ -22,8 +22,8 @@
 
     <div class=" rounded-lg shadow-lg card" ng-repeat="goal in bc.goals">
         <h1 class="mb-4 text-2xl">{{goal.name | uppercase}}</h1>
-        <i class="divide"></i>
-        <h4 class="mb-4 text-grey-darker text-sm flex-1">{{goal.task | capitalize}}</h4>
+
+        <p class="  mb-4 text-grey-darker text-sm flex-1"><b>{{goal.task | capitalize}}</b></p>
         <p class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide"
         >{{goal.date | date:'MM/dd/yyyy @ h:mma'}}</p>
 
