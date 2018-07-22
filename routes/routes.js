@@ -22,9 +22,11 @@ router.post('/tasks', function (req, res) {
         name: req.body.name,
         task: req.body.task
     });
+
     newTask.save().then(function (result) {
         console.log(result);
         res.redirect('/');
+
 
     }).catch(function (err) {
         console.log(err);

@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Report</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+    <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/view.css">
 
 
@@ -21,34 +25,57 @@
         </ul>
     </div>
 </header>
+
 <div class="user">
     <!-- <header class="user__header">
          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt=""/>
          <h1 class="user__title">Touch Goals</h1>
      </header>-->
 
-    <form class="form" action="/tasks" method="post">
+    <form class="form" action="/email" method="post">
         <div class="form__group">
             <input name="name" type="text" placeholder="Enter full name" class="form__input"/>
         </div>
-        <div class="form__group">
-            <textarea name="task" type="text" placeholder="Enter Activities " class="form__input"></textarea>
-        </div>
-
-        <!--<div class="form__group">
-            <input type="email" placeholder="Email" class="form__input"/>
-        </div>
 
         <div class="form__group">
-            <input type="password" placeholder="Password" class="form__input"/>
-        </div>-->
+            <input name="email" type="email" placeholder="Enter email address" class="form__input"/>
+        </div>
+        <div class="form__group">
+            <textarea name="monday" type="text" placeholder="Enter Work Done Monday" class="form__input"></textarea>
+        </div>
+        <div class="form__group">
+            <textarea name="tuesday" type="text" placeholder="Enter Work Done on  Tuesday  "
+                      class="form__input"></textarea>
+        </div>
+        <div class="form__group">
+            <textarea name="wednesday" type="text" placeholder="Enter Work Done  on Wednesday  "
+                      class="form__input"></textarea>
+        </div>
+        <div class="form__group">
+            <textarea name="thursday" type="text" placeholder="Enter  Work Done on Thursday  "
+                      class="form__input"></textarea>
+        </div>
+        <div class="form__group">
+            <textarea name="friday" type="text" placeholder="Enter Work Done on  Friday  "
+                      class="form__input"></textarea>
+        </div>
+        <div class="form__group">
+            <textarea name="challenges" type="text" placeholder="Enter challenges faced  "
+                      class="form__input"></textarea>
+        </div>
 
-        <button class="btn" type="submit">Add</button>
+
+        <button class="btn" type="submit">Send</button>
     </form>
 
 
 </div>
 
 
+<script src="/server.js"></script>
+<script src="js/index.js"></script>
+
+
 </body>
+
 </html>
