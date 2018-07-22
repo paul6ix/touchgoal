@@ -8,11 +8,14 @@ body {
     font-family: "Roboto" !important;;
     font-size: 14px;
     background-size: 200% 100% !important;
+    /*
     -webkit-animation: move 10s ease infinite;
     animation: move 10s ease infinite;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);
+    background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);*/
+
+    background: url("../assets/images/back.jpg") !important;
     height: 100vh;
 }
 
