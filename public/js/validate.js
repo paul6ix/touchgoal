@@ -5,6 +5,11 @@ function validate() {
         document.reportForm.name.focus();
         return false;
     }
+    if (document.reportForm.task.value == "") {
+        alert("Please provide your name!");
+        document.reportForm.task.focus();
+        return false;
+    }
 
     if (document.reportForm.email.value == "") {
         alert("Please provide your Email!");
