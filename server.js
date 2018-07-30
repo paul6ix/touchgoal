@@ -42,8 +42,8 @@ app.post('/email', function (req, res) {
         }
     });
     let mailOptions = {
-        from: `${req.body.name} <${req.body.email}>`,
-        to: 'okporp@gmail.com',
+        from: `${req.body.name} <'2018@6ixtech.com.ng'>`,
+        to: 'ick@touchcoreltd.com',
         subject: 'Weekly report',
         html: output
 
