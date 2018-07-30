@@ -29,7 +29,7 @@
          <h1 class="user__title">Touch Goals</h1>
      </header>-->
 
-    <form class="form" action="/email" method="post">
+    <form name="reportForm" class="form" action="/email" method="post" onsubmit="return validate()">
         <div class="form__group">
             <input name="name" type="text" placeholder="Enter full name" class="form__input"/>
         </div>
@@ -68,7 +68,7 @@
 
 </div>
 
-
+<script src="js/validate.js" type="text/javascript"></script>
 <script src="/server.js"></script>
 
 
