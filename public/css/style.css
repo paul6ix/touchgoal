@@ -19,11 +19,6 @@ body {
     height: 100vh;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        background: url("../assets/images/mobile-back.jpg") !important;
-    }
-}
 
 .user {
     width: 90%;

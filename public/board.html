@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/view.css">
     <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css'>
+
 </head>
 <body class="ng-cloak">
 <header>
@@ -18,7 +19,6 @@
         </ul>
     </div>
 </header>
-
 <div class="content float-left " ng-controller="boardController as bc">
 
     <div class=" rounded-lg shadow-lg card" ng-repeat="goal in bc.goals">
@@ -32,12 +32,30 @@
 
 
 </div>
+<!--<div class="card-columns" ng-controller="boardController as bc">
+    <div class="container">
+        <div  class="card bg-light  rounded-lg shadow-lg " ng-repeat="goal in bc.goals">
+
+            <div class="card-header">{{goal.name | uppercase}}</div>
+            <div class="card-body">
+                <p class="card-text">{{goal.task | capitalize}}.</p>
+                <p class="card-text"><small class="text-muted">Posted {{goal.date | date:'MM/dd/yyyy @ h:mma'}}</small></p>
+            </div>
+        </div>
+    </div>
+
+
+</div>-->
+
+
+
 
 <script src="scripts/angular.js"></script>
 <script src="scripts/angular-route.js"></script>
 <!--<script src="app.js"></script>-->
 <script src="controllers.js"></script>
 <script src="js/index.js"></script>
+
 
 </body>
 </html>

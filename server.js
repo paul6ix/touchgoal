@@ -31,8 +31,8 @@ app.post('/email', function (req, res) {
 `;
     let transporter = nodemailer.createTransport({
         host: 'mail.6ixtech.com.ng',
-        port: 587,
-        secure: false,
+        port: 465,
+        secureConnection: true,
         auth: {
             user: '2018@6ixtech.com.ng',
             pass: 'touchcore'
@@ -42,8 +42,8 @@ app.post('/email', function (req, res) {
         }
     });
     let mailOptions = {
-        from: `${req.body.name} <'2018@6ixtech.com.ng'>`,
-        to: 'ick@touchcoreltd.com',
+        from: `${req.body.name} <2018@6ixtech.com.ng>`,
+        to: 'okporp@gmail.com',
         subject: 'Weekly report',
         html: output
 
@@ -54,7 +54,7 @@ app.post('/email', function (req, res) {
         }
         console.log('Message sent: %s', info.messageId);
         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-        res.render('public', {message: window.alert('message sent')})
+        res.redirect('/');
     });
 
 });
