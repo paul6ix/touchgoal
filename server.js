@@ -25,6 +25,7 @@ app.post('/email', function (req, res) {
 <p> Wednesday: <br> ${req.body.wednesday}</p><br>
 <p> Thursday: <br> ${req.body.thursday}</p><br>
 <p> Friday: <br> ${req.body.friday}</p><br>
+<p> challenges faced:<br>${req.body.challenges}</p>
 
 
 
@@ -43,7 +44,7 @@ app.post('/email', function (req, res) {
     });
     let mailOptions = {
         from: `${req.body.name} <2018@6ixtech.com.ng>`,
-        to: 'okporp@gmail.com',
+        to: 'paul.chidi@touchcoreltd.com',
         subject: 'Weekly report',
         html: output
 
@@ -54,7 +55,7 @@ app.post('/email', function (req, res) {
         }
         console.log('Message sent: %s', info.messageId);
         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-        res.redirect('/');
+        res.redirect('back');
     });
 
 });

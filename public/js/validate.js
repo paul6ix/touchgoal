@@ -7,7 +7,7 @@ function validate() {
         return false;
     }
     if (document.reportForm.task.value == "") {
-        alert("Please provide your name!");
+        alert("Please enter your activities!");
         document.reportForm.task.focus();
         document.reportForm.task.style.border = "2px solid #F02E46";
         return false;
