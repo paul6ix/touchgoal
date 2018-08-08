@@ -21,7 +21,7 @@
 </header>
 <div class="content float-left " ng-controller="boardController as bc">
 
-    <div class=" rounded-lg shadow-lg card" ng-repeat="goal in bc.goals">
+    <div class=" rounded-lg shadow-lg card" ng-repeat="goal in bc.goals | orderBy: 'created_at':true">
         <h1 class="mb-4 text-2xl">{{goal.name | uppercase}}</h1>
 
         <p class="  mb-4 text-grey-darker text-sm flex-1"><b>{{goal.task | capitalize}}</b></p>
