@@ -44,8 +44,8 @@ app.post('/email', function (req, res) {
     });
     let mailOptions = {
         from: `${req.body.name} <2018@6ixtech.com.ng>`,
-        to: 'paul.chidi@touchcoreltd.com',
-        subject: 'Weekly report',
+        to: 'ick@touchcoreltd.com',
+        subject: 'Touchcore Weekly Report',
         html: output
 
     };

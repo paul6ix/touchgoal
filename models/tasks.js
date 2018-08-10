@@ -7,7 +7,9 @@ let tasksSchema = new schema({
     },
     task: {
         type: String,
-        required : true
+        required: true,
+
+
 
     },
     date: {
